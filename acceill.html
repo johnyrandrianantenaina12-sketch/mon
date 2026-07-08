@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutique PressMart - Version Complète</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="container">
+            <span><i class="fas fa-phone"></i> +261 34 00 000 00</span>
+            <span>Livraison Gratuite dès 100€ d'achat</span>
+        </div>
+    </div>
+
+    <header>
+        <div class="container header-flex">
+            <div class="logo">PressMart<span>.</span></div>
+            <nav>
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="boutique.html">Boutique</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="icones">
+                <i class="fas fa-search"></i>
+                <i class="far fa-user"></i>
+                <div class="panier-trigger">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="badge" id="cart-count">0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-flex">
+            <div class="hero-text">
+                <span class="promo">Offre Spéciale : -50%</span>
+                <h1>LA MODE QUI<br>VOUS RESSEMBLE</h1>
+                <p>Découvrez notre nouvelle collection de saison avec des designs exclusifs.</p>
+                <a href="#produits" class="btn-primary">Découvrir maintenant</a>
+            </div>
+            <div class="hero-image">
+                <img src="image/view-neon-illuminated-gaming-desk-setup-with-keyboard.jpg" alt="Model">
+            </div>
+        </div>
+    </section>
+
+    <section id="produits" class="produits">
+        <div class="container">
+            <h2 class="section-title">Nos Articles de Sport</h2>
+            <div class="grille-produits">
+                
+                <div class="carte">
+                    <div class="badge-promo">Remise</div>
+                    <img src="image/sports-neymar-brazilian-paris_saint_germain_f_c-soccer-451964.jpeg "alt="Chaussure">
+                    <h3>Chaussure Sport Elite</h3>
+                    <p class="prix">89,00 €</p>
+                    <button class="btn-add" onclick="addToCart('Chaussure Sport Elite', 89)">Ajouter au panier</button>
+                </div>
+
+                <div class="carte">
+                    <img src="image/view-illuminated-neon-gaming-keyboard-setup-controller (1).jpg" alt="Montre">
+                    <h3>Montre Sport Digitale</h3>
+                    <p class="prix">120,00 €</p>
+                    <button class="btn-add" onclick="addToCart('Montre Sport Digitale', 120)">Ajouter au panier</button>
+                </div>
+
+                <div class="carte">
+                    <img src="image/view-illuminated-neon-gaming-keyboard-setup-controller.jpg" alt="Sac">
+                    <h3>Sac de Voyage Premium</h3>
+                    <p class="prix">65,00 €</p>
+                    <button class="btn-add" onclick="addToCart('Sac de Voyage Premium', 65)">Ajouter au panier</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <button class="whatsapp-btn" onclick="checkout()">
+        <i class="fab fa-whatsapp"></i> Commander sur WhatsApp
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
